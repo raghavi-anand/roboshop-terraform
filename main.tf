@@ -1,7 +1,8 @@
 terraform {
   backend "s3" {}
-  
-variable test{}
+}
+ 
+variable "test"{}
 
 output "test"{
     value = var.test
