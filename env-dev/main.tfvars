@@ -1,4 +1,4 @@
-components = {
+variable "components" = {
   frontend = {
     name = "frontend"
     instance_type = "t3.micro"
@@ -39,7 +39,9 @@ components = {
     name = "rabbitmq"
     instance_type = "t3.micro"
   }
-}
+
 
 security_groups = [ "sg-042e2fb781abad065" ]
 zone_id = "Z0777144FBIIX48E8YVZ"
+
+}
